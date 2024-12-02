@@ -1,0 +1,86 @@
+.details-container .details-producto-imagen {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.details-container .details-btn-cantidad, 
+.details-container .details-btn-agregar-carrito {
+    background-color: #b08877;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.details-back-link {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.details-back-link a {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+.details-container .details-btn-cantidad:active, 
+.details-container .details-btn-agregar-carrito:active {
+    background-color: #b08877;
+    box-shadow: none;
+}
+
+.details-container .details-btn-cantidad:hover, 
+.details-container .details-btn-agregar-carrito:hover {
+    background-color: #a07665; 
+    color: #fff;
+}
+
+.details-container .details-producto-descripcion {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #333;
+}
+
+.details-container .details-producto-precio {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.details-container .details-cantidad-control {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.details-container .details-cantidad {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #333;
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .details-container .details-row {
+        flex-direction: column;
+    }
+
+    .details-container .details-image-container, 
+    .details-container .details-info-container {
+        margin: 15px 0;
+    }
+
+    .details-container .details-producto-descripcion {
+        font-size: 1rem;
+    }
+
+    .details-container .details-producto-precio {
+        font-size: 1.2rem;
+    }
+}

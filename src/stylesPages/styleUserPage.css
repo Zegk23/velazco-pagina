@@ -1,0 +1,212 @@
+
+.container-perfil {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header del Perfil */
+.perfil-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.perfil-imagen .icono-perfil {
+  font-size: 5rem;
+  color: #6c757d;
+}
+
+.perfil-informacion {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.perfil-informacion h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.perfil-informacion p {
+  margin: 0.5rem 0 0;
+  color: #6c757d;
+}
+
+.perfil-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boton-primario {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-primario:hover {
+  background-color: #0056b3;
+}
+
+.boton-peligro {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-peligro:hover {
+  background-color: #c82333;
+}
+
+/* Formulario */
+.perfil-formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-formulario label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.grupo-formulario input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Pedidos */
+.perfil-pedidos {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pedidos-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icono-pedidos {
+  font-size: 2rem;
+  color: #E65032;
+  margin-right: 0.5rem;
+}
+
+.descripcion-pedidos {
+  color: #6c757d;
+}
+
+/* Direcciones */
+.perfil-direcciones {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.direcciones-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icono-direcciones {
+  font-size: 2rem;
+  color: #E65032;
+  margin-right: 0.5rem;
+}
+
+.descripcion-direcciones {
+  color: #6c757d;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .perfil-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-informacion {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .perfil-botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-formulario {
+    grid-template-columns: 1fr;
+  }
+}
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-form {
+  margin-bottom: 1.5rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons .boton-primario,
+.modal-buttons .boton-peligro {
+  flex: 1;
+  margin: 0 0.5rem;
+}

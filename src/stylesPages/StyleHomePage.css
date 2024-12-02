@@ -1,0 +1,115 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.about-section {
+    background: url(https://artesaniadelhorno.com/wp-content/uploads/2022/08/quienes-somos-1.png) no-repeat right;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: left;
+    background-color: #fdfdfd;
+    padding: 50px;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 900 !important;
+    font-size: 30px;
+}
+
+.text {
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.custom-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.titulo-card {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.card-texto {
+    font-size: 17px;
+    color: #545454;
+    line-height: 1.6;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-container {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 50px 20px;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-card {
+        max-width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 30px;
+    }
+}

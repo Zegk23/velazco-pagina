@@ -1,0 +1,141 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+:root {
+  --ColorPrincipal: #CA7B42;
+}
+#botonCarrusel {
+  text-decoration: none !important; /* Quita el subrayado */
+}
+
+#botonCarrusel:focus {
+  outline: none !important; /* Elimina el contorno azul */
+  box-shadow: none !important; /* Elimina cualquier sombra de enfoque */
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  width: 50% !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 290px;
+  border-top-right-radius: 180px !important;
+  filter: brightness(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-caption {
+  right: 5%;
+  left: auto;
+  text-align: left;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  transform: translateX(135%);
+}
+
+.text-destacado {
+  color: #CA7B42 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #A0522D;
+  border: 1px solid #A0522D;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+  background-color: #5D3A00;
+  opacity: 1;
+}
+
+#botonCarrusel {
+  margin-left: 220px !important;
+  width: 220px !important;
+}
+
+/* Cambios solo en media queries */
+@media (max-width: 1251px) {
+  #parrafo-texto {
+    font-size: 25px !important;
+    margin: auto;
+    color: white !important;
+    text-align: center;
+  }
+
+  .carousel-caption {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 300px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #botonCarrusel {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important; 
+  }
+
+  .c-img {
+    width: 100% !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px !important;
+    filter: brightness(0.4);
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(125%);
+  }
+
+  span.carousel-control-next-icon {
+    margin-top: 14px;
+  }
+
+  span.carousel-control-prev-icon {
+    margin-top: 14px;
+  }
+}
+@media (max-width:770px){
+  #parrafo-texto {
+    font-size: 19px !important;
+    margin: auto;
+    color: white !important;
+    text-align: center;
+  }
+  span.text-destacado{
+    font-size: 19px!important;
+  }
+}a {
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+img.logo {
+    width: 150px !important;
+    height: 60px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+svg,
+span {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+svg:hover,
+span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container-fluid {
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.sidebar .navbar-nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar .navbar-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #C07648;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.sidebar .navbar-nav a:hover {
+    color: #C07648;
+}
+
+
+
+@media (max-width: 768px) {
+    img.logo {
+        width: 100px !important;
+        height: 45px !important;
+    }
+
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    #divHeader {
+        padding: 0px !important;
+    }
+
+    .container-fluid {
+        padding: 0 !important;
+        padding-top: 2px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    img.logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    #divHeader {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100% !important;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        color: rgb(255, 255, 255) ;
+        z-index: 1050;
+        overflow-y: auto;
+    }
+   
+    .d-flex.justify-content-center.align-items-center.gap-3.mx-4 {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+
+    #logo {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,126 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.card {
+    width: 100%;
+    max-width: 350px;
+    color: #6c3b2a;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+h5 {
+    font-weight: 100 !important;
+}
+h1{
+    font-weight: 900;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-radius: 50%; 
+    border: 1px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.7s ease; 
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.add-to-cart svg {
+    width: 20px;
+    height: 20px;
+    fill: gray; 
+    transform: none;
+}
+.card:hover .add-to-cart {
+    bottom: 40%; 
+    z-index: 2;
+}
+
+.add-to-cart:hover {
+    background-color: #b08877;
+}
+
+.add-to-cart:hover svg {
+    fill: white; 
+}
+
+.categoria {
+    font-size: 1rem;
+}
+.col-lg-3, .col-md-4, .col-sm-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries para mejorar el responsive */
+@media (max-width: 1200px) {
+    .card {
+        max-width: 300px;
+    }
+    img {
+        height: 60%; /* Disminuir la altura en pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        max-width: 250px;
+    }
+    img {
+        height: 55%; /* Disminuir aún más la altura en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 200px;
+    }
+    img {
+        height: 60%; 
+    }
+    .add-to-cart {
+        width: 30px;
+        height: 30px;
+    }
+    .add-to-cart svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 180px;
+    }
+    img {
+        height: 60%; 
+    }
+    .categoria {
+        font-size: 0.9rem; 
+    }
+}
